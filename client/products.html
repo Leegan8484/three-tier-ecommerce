@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | E-Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/products.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="index.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+E-Shop
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbar">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<form class="d-flex me-3">
+
+<input
+id="search"
+class="form-control me-2"
+type="search"
+placeholder="Search Products">
+
+<button class="btn btn-light">
+
+<i class="fa-solid fa-search"></i>
+
+</button>
+
+</form>
+
+<a href="cart.html" class="btn btn-success position-relative px-4 me-2">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart
+
+    <span id="cartCount"
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        style="display:none;">
+        0
+    </span>
+</a>
+
+<a href="orders.html" class="btn btn-info text-white ms-2">
+    <i class="fa-solid fa-box"></i>
+    My Orders
+</a>
+   <div id="userMenu" class="dropdown ms-2" style="display:none;">
+
+    <button
+        class="btn btn-warning dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown">
+
+        <i class="fa-solid fa-user"></i>
+
+        <span id="userName"></span>
+
+    </button>
+
+    <ul class="dropdown-menu dropdown-menu-end">
+
+        <li>
+            <a class="dropdown-item"
+               id="dashboardLink"
+               href="admin/dashboard.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Dashboard
+
+            </a>
+        </li>
+
+        <li><hr class="dropdown-divider"></li>
+
+        <li>
+            <a class="dropdown-item text-danger"
+               href="#"
+               onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</nav>
+
+<!-- Heading -->
+
+<section class="py-5 bg-light">
+
+<div class="container text-center">
+
+<h1 class="fw-bold">
+
+Our Products
+
+</h1>
+
+<p class="text-muted">
+
+Find the best products at the best prices
+
+</p>
+
+<!-- Category Buttons -->
+
+<div class="mt-4">
+
+<button
+class="btn btn-primary me-2"
+
+onclick="filterProducts('All')">
+
+All
+
+</button>
+
+<button
+class="btn btn-outline-primary me-2"
+onclick="filterProducts('Mobiles')">
+
+📱 Mobiles
+
+</button>
+
+<button
+class="btn btn-outline-primary me-2"
+
+onclick="filterProducts('Fashion')">
+
+👕 Fashion
+
+</button>
+
+<button
+class="btn btn-outline-primary"
+
+onclick="filterProducts('Footwear')">
+
+👟 Footwear
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Products -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row"
+
+id="productsContainer">
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/products.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

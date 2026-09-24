@@ -1,0 +1,371 @@
+body{
+    background:#f8f9fa;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+/* Navbar */
+
+.navbar-brand{
+    font-size:30px;
+}
+
+.nav-link{
+    margin-left:15px;
+    font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+    min-height:600px;
+    display:flex;
+    align-items:center;
+}
+.hero h1{
+    font-size:55px;
+}
+
+.hero-box{
+    background:transparent;
+    box-shadow:none;
+    padding:0;
+}
+
+
+.hero-image{
+    width:100%;
+    max-width:650px;
+    height:auto;
+    object-fit:contain;
+}
+
+.hero-box i{
+
+    font-size:70px;
+
+    margin:20px;
+
+    color:#0d6efd;
+
+}
+
+.hero-box i:nth-child(2){
+
+    color:#198754;
+
+}
+
+.hero-box i:nth-child(3){
+
+    color:#fd7e14;
+
+}
+
+.hero-box i:nth-child(4){
+
+    color:#dc3545;
+
+}
+
+.btn,
+.form-control {
+    border-radius: 8px;
+}
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero-box{
+
+margin-top:30px;
+
+}
+
+}
+
+/*======================
+
+Categories
+
+======================*/
+
+.category-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.category-card i{
+
+    font-size:60px;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+.category-card:hover i{
+
+    color:white;
+
+}
+
+/*======================
+
+Featured Products
+
+======================*/
+
+.product-card{
+
+    transition:0.4s;
+
+    border-radius:20px;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+
+}
+
+.product-image{
+
+    width:170px;
+    height:170px;
+    object-fit:contain;
+    margin:20px auto;
+    display:block;
+    transition:.4s;
+
+}
+
+.product-card:hover .product-image{
+
+    transform:scale(1.08);
+
+}
+
+.product-card button{
+
+    border-radius:30px;
+
+}
+
+/*======================
+
+Special Offers
+
+======================*/
+
+.offers{
+
+    background:#f8f9fa;
+
+}
+
+.offer-box{
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.offer-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.offer-icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.offer-box button{
+
+    margin-top:15px;
+
+    border-radius:30px;
+
+    padding:10px 30px;
+
+}
+
+/*========================
+
+WHY CHOOSE US
+
+=========================*/
+
+.feature-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.feature-box:hover{
+
+    background:#0d6efd;
+
+    color:white;
+
+    transform:translateY(-10px);
+
+}
+
+.feature-icon{
+
+    font-size:60px;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+.feature-box:hover .feature-icon{
+
+    color:white;
+
+}
+
+/*========================
+
+REVIEWS
+
+=========================*/
+
+.review-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/*========================
+
+NEWSLETTER
+
+=========================*/
+
+.newsletter{
+
+    padding:70px 0;
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.hero-image{
+    width:100%;
+    max-width:420px;
+    height:auto;
+    object-fit:contain;
+}
+/* =========================
+   Navbar Buttons
+========================= */
+
+.navbar .btn{
+    padding:8 0px ;
+    font-size:14px;    white-space:nowrap;
+    transition:0.3s;
+}
+
+.navbar .btn i{
+    font-size:px;
+    margin-right:5px;
+}
+
+/* Cart Badge */
+
+#cartCount{
+    font-size:11px;
+    min-width:18px;
+    height:18px;
+    line-height:18px;
+}
+
+/* Zoom / Responsive */
+
+@media (max-width:992px){
+
+    .navbar .btn{
+        width:100%;
+        margin-top:8px;
+    }
+
+}

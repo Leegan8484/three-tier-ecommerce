@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | E-Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/checkout.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="index.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+E-Shop
+
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<div class="d-flex align-items-center">
+
+<a href="cart.html"
+class="btn btn-success nav-btn position-relative me-3">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+<span
+id="cartCount"
+class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+style="display:none;">
+
+0
+
+</span>
+
+</a>
+
+<a href="orders.html"
+class="btn btn-info text-white nav-btn">
+
+<i class="fa-solid fa-box"></i>
+
+My Orders
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= PAGE ================= -->
+
+<div class="container py-5">
+
+<h2 class="text-center fw-bold mb-5">
+
+<i class="fa-solid fa-credit-card text-success"></i>
+
+Checkout
+
+</h2>
+
+<div class="row g-4">
+
+<!-- Shipping -->
+
+<div class="col-lg-7">
+
+<div class="card">
+
+<h4 class="mb-4">
+
+Shipping Details
+
+</h4>
+
+<form id="checkoutForm">
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="name"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Phone Number
+
+</label>
+
+<input
+type="text"
+id="phone"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Delivery Address
+
+</label>
+
+<textarea
+id="address"
+rows="4"
+class="form-control"
+required></textarea>
+
+</div>
+
+<div class="mb-4">
+
+<label class="form-label">
+
+Payment Method
+
+</label>
+
+<select
+id="payment"
+class="form-select">
+
+<option>Cash On Delivery</option>
+
+<option>UPI</option>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+</select>
+
+</div>
+
+<button
+type="submit"
+class="btn btn-success checkout-btn w-100">
+
+<i class="fa-solid fa-check"></i>
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Summary -->
+
+<div class="col-lg-5">
+
+<div class="card summary-card">
+
+<h4>
+
+<i class="fa-solid fa-receipt"></i>
+
+Order Summary
+
+</h4>
+
+<hr>
+
+<div id="summary">
+
+Loading...
+
+</div>
+
+<hr>
+
+<div class="d-grid gap-2">
+
+<a
+href="cart.html"
+class="btn btn-outline-primary">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back To Cart
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer mt-5">
+
+<div class="container text-center">
+
+<h5>E-Shop</h5>
+
+<p>Your Trusted Online Shopping Destination</p>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="products.html">Products</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>
+📧 support@eshop.com |
+📞 +91 9876543210
+</p>
+
+<p class="mb-0">
+© 2026 E-Shop | AWS Three-Tier E-Commerce Application
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

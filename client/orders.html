@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Orders | E-Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/orders.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="index.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+E-Shop
+
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<div class="d-flex align-items-center">
+
+<a href="cart.html"
+class="btn btn-success nav-btn position-relative me-3">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Cart
+
+<span
+id="cartCount"
+class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+style="display:none;">
+
+0
+
+</span>
+
+</a>
+
+<a href="orders.html"
+class="btn btn-info text-white nav-btn">
+
+<i class="fa-solid fa-box"></i>
+
+My Orders
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<div class="container py-5">
+
+<h2 class="text-center fw-bold mb-5">
+
+<i class="fa-solid fa-box text-primary"></i>
+
+My Orders
+
+</h2>
+
+<div id="ordersContainer"></div>
+
+</div>
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h5>E-Shop</h5>
+
+<p>Your Trusted Online Shopping Destination</p>
+
+<p>
+
+<a href="index.html">Home</a> |
+
+<a href="products.html">Products</a> |
+
+<a href="about.html">About</a> |
+
+<a href="contact.html">Contact</a>
+
+</p>
+
+<p>
+
+📧 support@eshop.com |
+
+📞 +91 9876543210
+
+</p>
+
+<p>
+
+© 2026 E-Shop | AWS Three-Tier E-Commerce Application
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+<script src="js/orders.js"></script>
+
+</body>
+
+</html>
