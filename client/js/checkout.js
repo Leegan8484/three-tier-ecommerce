@@ -6,7 +6,7 @@ async function loadSummary() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/cart", {
+        const response = await fetch("/api/cart", {
 
             headers: {
 
@@ -74,7 +74,7 @@ document.getElementById("checkoutForm").addEventListener("submit", async functio
 
     try {
 
-       const response = await fetch("http://localhost:5000/api/orders/checkout", {
+       const response = await fetch("/api/orders/checkout", {
 
     method: "POST",
 

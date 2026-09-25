@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/products";
+const API = "/api/products";
 
 const container = document.getElementById("productsContainer");
 
@@ -48,7 +48,7 @@ function displayProducts(products) {
             <div class="card product-card h-100 shadow">
 
                 <img
-                    src="http://localhost:5000/uploads/${product.image}"
+                    src="/uploads/${product.image}"
                     class="card-img-top"
                     alt="${product.product_name}">
 
@@ -153,7 +153,7 @@ async function addToCart(productId) {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/cart/add", {
+        const response = await fetch("/api/cart/add", {
 
             method: "POST",
 

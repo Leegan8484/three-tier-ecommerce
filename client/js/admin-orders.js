@@ -7,7 +7,7 @@ async function loadOrders() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/orders/admin", {
+        const response = await fetch("/api/orders/admin", {
 
             headers: {
                 Authorization: "Bearer " + token
@@ -102,7 +102,7 @@ async function viewOrder(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/orders/admin/${id}`, {
+        const response = await fetch(`/api/orders/admin/${id}`, {
 
             headers: {
                 Authorization: "Bearer " + token
@@ -225,7 +225,7 @@ async function updateStatus() {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/orders/admin/${id}`, {
+        const response = await fetch(`/api/orders/admin/${id}`, {
 
             method: "PUT",
 

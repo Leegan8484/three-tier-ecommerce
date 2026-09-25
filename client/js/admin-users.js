@@ -7,7 +7,7 @@ async function loadUsers() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/users", {
+        const response = await fetch("/api/users", {
 
             headers: {
                 Authorization: "Bearer " + token
@@ -101,7 +101,7 @@ async function editUser(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/users/${id}`, {
+        const response = await fetch(`/api/users/${id}`, {
 
             headers: {
                 Authorization: "Bearer " + token
@@ -154,7 +154,7 @@ console.log("Role value:", document.getElementById("role").value);
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/users/${id}`, {
+        const response = await fetch(`/api/users/${id}`, {
 
             method: "PUT",
 
@@ -205,7 +205,7 @@ async function deleteUser(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/users/${id}`, {
+        const response = await fetch(`/api/users/${id}`, {
 
             method: "DELETE",
 

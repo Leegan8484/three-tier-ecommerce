@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/cart";
+const API_URL = "/api/cart";
 
 const cartToken = localStorage.getItem("token");
 
@@ -71,7 +71,7 @@ async function loadCart() {
                     <div class="col-md-3 text-center">
 
                         <img
-                        src="http://localhost:5000/uploads/${item.image}"
+                        src="/uploads/${item.image}"
                         class="cart-img">
 
                     </div>

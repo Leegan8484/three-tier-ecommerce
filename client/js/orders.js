@@ -5,7 +5,7 @@ async function loadOrders() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/orders", {
+        const response = await fetch("/api/orders", {
 
             headers: {
 
@@ -44,7 +44,7 @@ container.innerHTML += `
 <div class="col-md-3 text-center">
 
 <img
-src="http://localhost:5000/uploads/${order.image}"
+src="/uploads/${order.image}"
 class="img-fluid rounded"
 style="width:120px;height:120px;object-fit:cover;">
 

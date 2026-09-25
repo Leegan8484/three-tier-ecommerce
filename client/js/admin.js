@@ -11,7 +11,7 @@ async function loadDashboard() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/admin/dashboard", {
+        const response = await fetch("/api/admin/dashboard", {
 
             method: "GET",
 
@@ -61,7 +61,7 @@ async function loadRecentOrders() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/recent-orders",
+            "/api/admin/recent-orders",
             {
                 headers: {
                     Authorization: "Bearer " + token

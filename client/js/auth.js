@@ -2,7 +2,7 @@
 // Backend API URL
 // =============================
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "/api/auth";
 
 // =============================
 // Show / Hide Password

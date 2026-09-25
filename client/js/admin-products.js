@@ -9,7 +9,7 @@ async function loadCategories() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/categories");
+        const response = await fetch("/api/categories");
 
         const categories = await response.json();
 
@@ -50,7 +50,7 @@ async function loadProducts() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/products", {
+        const response = await fetch("/api/products", {
 
             headers: {
                 "Authorization": "Bearer " + token
@@ -152,12 +152,12 @@ if (addProductForm) {
 
         try {
 
-            let url = "http://localhost:5000/api/products";
+            let url = "/api/products";
 let method = "POST";
 
 if (editProductId) {
 
-    url = `http://localhost:5000/api/products/${editProductId}`;
+    url = `/api/products/${editProductId}`;
 
     method = "PUT";
 
@@ -228,7 +228,7 @@ async function editProduct(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/products/${id}`);
+        const response = await fetch(`/api/products/${id}`);
 
         const product = await response.json();
 
@@ -240,7 +240,7 @@ async function editProduct(id) {
 
 const preview = document.getElementById("previewImage");
 
-preview.src = "http://localhost:5000/uploads/" + product.image;
+preview.src = "/uploads/" + product.image;
 
 preview.style.display = "block";
 document.getElementById("modalTitle").innerText = "Edit Product";
@@ -269,7 +269,7 @@ async function deleteProduct(id) {
 
     try {
 
-        const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+        const response = await fetch(`/api/products/${id}`, {
 
             method: "DELETE",
 

@@ -60,7 +60,7 @@ async function loadCartCount() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/cart", {
+        const response = await fetch("/api/cart", {
             headers: {
                 Authorization: "Bearer " + token
             }
